@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar_chart</title>
+    <script src="jquery-3.1.1.js"></script>
+    <style>
+        body{
+            width: 1300px;
+            margin: 20px;
+            background-color: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: gray
+        }
+        span{
+            font-size: large;
+            font-weight: 500;
+        }
+        li{
+            list-style: none;
+        }
+        #maps:hover{
+            color: white;
+        }
+        #barbox{
+            margin-top: 50px;
+            float: right;
+        }
+        #header{
+            float:left;
+        }
+        img{
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('area').click(function(){
+                var id = './loc_bar/' + $(this).attr('id') + '.html'
+                $("iframe").attr('src',id)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id = 'barbox'>
+        <iframe src="./loc_bar/New_York_city.html" frameborder="0" width="850" height="600"></iframe>
+    </div>
+
+    <div id = 'header'>
+        <a id = 'maps' href='map_index.html'>Maps</a>
+        <span>/</span>
+        <span>Bar Chart</span>
+        
+        <h2>Salary in US</h2>
+    </div>
+
+    <div id = 'usa_map'>
+        <img src="./usa_map.png" usemap="#usa_map" alt="" width="450">
+        <map name="usa_map" id="usa_map">
+            <area id='Seattle' shape="circle" coords="43,36,10" href="javascript:void(0);" alt="">
+            <area id='San_Francisco' shape="circle" coords="16,138,10" href="javascript:void(0);" alt="">
+            <area id='San_Jose' shape="circle" coords="30,157,10" href="javascript:void(0);" alt="">
+            <area id='Los_angeles' shape="circle" coords="32,175,10" href="javascript:void(0);" alt="">
+            <area id='San_Diego' shape="circle" coords="48,198,10" href="javascript:void(0);" alt="">
+            <area id='Phoenix' shape="circle" coords="102,189,10" href="javascript:void(0);" alt="">
+            <area id='Denver' shape="circle" coords="168,136,10" href="javascript:void(0);" alt="">
+            <area id='Dallas' shape="circle" coords="229,205,10" href="javascript:void(0);" alt="">
+            <area id='Houston' shape="circle" coords="249,239,10" href="javascript:void(0);" alt="">
+            <area id='Chicago' shape="circle" coords="299,103,10" href="javascript:void(0);" alt="">
+            <area id='Atlanta' shape="circle" coords="343,178,10" href="javascript:void(0);" alt="">
+            <area id='Miami' shape="circle" coords="391,261,10" href="javascript:void(0);" alt="">
+            <area id='Boston' shape="circle" coords="429,55,10" href="javascript:void(0);" alt="">
+            <area id='New_York_city' shape="circle" coords="414,77,10" href="javascript:void(0);" alt="">
+            <area id='Philadelphia' shape="circle" coords="407,95,10" href="javascript:void(0);" alt="">
+            <area id='Washington' shape="circle" coords="394,109,10" href="javascript:void(0);" alt="">
+ 
+        </map>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿job,location,salary_med,demand,lon,lat
+IT manager,"New York City, NY",109252,4,-74.005974,40.712776
+IT manager,"Los Angeles, CA",104814,3,-118.243683,34.052235
+IT manager,"San Francisco, CA",113595,4,-122.419418,37.774929
+IT manager,"San Jose, CA",121832,4,-121.88633,37.338207
+IT manager,"Boston, MA",112605,4,-71.058884,42.360081
+IT manager,"Chicago, IL",105750,3,-87.63245,41.88425
+IT manager,"Houston, TX",106857,3,-95.36953,29.76079
+IT manager,"Phoenix, AZ",102032,3,-112.0758,33.44826
+IT manager,"Philadelphia, PA",104519,3,-75.16218,39.95223
+IT manager,"San Antonio, TX",90998,3,-98.49461,29.42458
+IT manager,"San Diego, CA",101701,3,-117.16171,32.71568
+IT manager,"Dallas, TX",104529,3,-96.79512,32.77823
+IT manager,"Indianapolis, IN",99796,3,-86.14996,39.76691
+IT manager,"Washington, DC",106341,4,-77.03196,38.89037
+IT manager,"Miami, FL",94981,3,-80.19773,25.77481
+IT manager,"Pittsburgh, PA",98771,3,-79.99734,40.43851
+IT manager,"New York City, NY",109252,4,-74.005974,40.712776
+IT manager,"Los Angeles, CA",104814,3,-118.243683,34.052235
+IT manager,"San Francisco, CA",113595,4,-122.419418,37.774929
+IT manager,"San Jose, CA",121832,4,-121.88633,37.338207
+IT manager,"Boston, MA",112605,4,-71.058884,42.360081
+IT manager,"Chicago, IL",105750,3,-87.63245,41.88425
+IT manager,"Houston, TX",106857,3,-95.36953,29.76079
+IT manager,"Phoenix, AZ",102032,3,-112.0758,33.44826
+IT manager,"Philadelphia, PA",104519,3,-75.16218,39.95223
+IT manager,"San Antonio, TX",90998,3,-98.49461,29.42458
+IT manager,"San Diego, CA",101701,3,-117.16171,32.71568
+IT manager,"Dallas, TX",104529,3,-96.79512,32.77823
+IT manager,"Indianapolis, IN",99796,3,-86.14996,39.76691
+IT manager,"Washington, DC",106341,4,-77.03196,38.89037
+IT manager,"Miami, FL",94981,3,-80.19773,25.77481
+IT manager,"Pittsburgh, PA",98771,3,-79.99734,40.43851
+IT manager,"Montgomery, AL",102976,3,-86.279118,32.361538
+IT manager,"Little Rock, AR",82570,3,-92.331122,34.736009
+IT manager,"Sacramento, CA",102366,3,-121.468926,38.555605
+IT manager,"Denver, CO",100193,3,-104.984167,39.7391667
+IT manager,"Hartford, CT",102319,4,-72.677,41.767
+IT manager,"Dover, DE",93307,4,-75.526755,39.161921
+IT manager,"Tallahassee, FL",86986,3,-84.27277,30.4518
+IT manager,"Atlanta, GA",106644,4,-84.39,33.76
+IT manager,"Boise, ID",95227,3,-116.237651,43.613739
+IT manager,"Springfield, IL",86442,3,-89.650373,39.78325
+IT manager,"Des Moines, IA",94813,3,-93.620866,41.590939
+IT manager,"Topeka, KS",93344,3,-95.69,39.04
+IT manager,"Frankfort, KY",91541,4,-84.86311,38.197274
+IT manager,"Baton Rouge, LA",92281,3,-91.140229,30.45809
+IT manager,"Augusta, GA",84316,3,-69.765261,44.323535
+IT manager,"Annapolis, MD",100508,3,-76.501157,38.972945
+IT manager,"Lansing, MI",75287,4,-84.5467,42.7335
+IT manager,"Saint Paul, MN",98853,3,-93.094,44.95
+IT manager,"Jefferson City, MO",86944,3,-92.189283,38.572954
+IT manager,"Lincoln, NE",79380,3,-96.675345,40.809868
+IT manager,"Carson City, NV",85062,4,-119.753877,39.160949
+IT manager,"Concord, NH",87075,3,-71.549127,43.220093
+IT manager,"Trenton, NJ",109117,4,-74.756138,40.221741
+IT manager,"Santa Fe, NM",91131,3,-105.964575,35.667231
+IT manager,"Albany, NY",98975,3,-73.781339,42.659829
+IT manager,"Raleigh, NC",105812,3,-78.638,35.771
+IT manager,"Bismarck, ND",88615,4,-100.779004,48.813343
+IT manager,"Columbus, OH",94403,3,-83.000647,39.962245
+IT manager,"Oklahoma City, OK",90017,3,-97.534994,35.482309
+IT manager,"Salem, OR",93100,3,-123.029159,44.931109
+IT manager,"Providence, RI",107297,3,-71.422132,41.82355
+IT manager,"Columbia, SC",95178,3,-81.035,34.0
+IT manager,"Pierre, SD",93953,4,-100.336378,44.367966
+IT manager,"Nashville, TN",87037,3,-86.784,36.165
+IT manager,"Austin, TX",99227,3,-97.75,30.266667
+IT manager,"Salt Lake City, UT",86652,3,-111.892622,40.7547
+IT manager,"Montpelier, VT",88793,3,-72.57194,44.26639
+IT manager,"Seattle, WA",110656,4,-122.332069,47.606209
+IT manager,"Charleston, WV",92781,3,-81.633294,38.349497
+IT manager,"Madison, WI",83140,3,-89.384444,43.074722
+IT manager,"Cheyenne, WY",91386,4,-104.802042,41.145548

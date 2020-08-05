@@ -1,0 +1,77 @@
+job_list_query = ["software developer", "IT manager", "web developer", "database administrator",
+                  "information security analyst", "computer systems analyst", "computer network architect",
+                  "computer support specialist", "Circuit Design Engineer", "FPGA Engineer",
+                  "Embedded Systems Engineer", "Electrical Design Engineer", "Telecommunications Engineer",
+                  "Machine Learning Engineer", "Data_scientist"]
+
+job_list_supplement = ["Java Software Engineer", "Python Software Engineer", "Golang Software Engineer",
+                       "PHP developer", "Node js developer", "Ruby developer", "Front End Web Developer",
+                       "SQL Developer", "flash Developer", "JavaScript Developer", "Android Developer", "IOS Developer",
+                       "Database Engineer", "Spark Engineer", "Data Analyst", "electrical test",
+                       "Performance Test Engineer", "Test Automation Engineer", "PLC Technician", "DSP engineer",
+                       "ARM engineer", "NLP engineer", "computer vision engineer", "Operations Technician",
+                       "Software Product Manager", "Architect"]
+
+job_list_salary = ["Software Developer / Engineer", "IT manager", "Web Developer", "Database Administrator",
+                   "Cyber Security Analyst", "Systems Analyst", "Network Engineer / Architect",
+                   "Integrated Circuit (IC) Design Engineer",
+                   "Hardware Design Engineer",
+                   "Embedded Software Engineer", "Electrical Design Engineer", "Telecommunications Network Technician",
+                   "Data Scientist"]
+
+# loc_list = ["New York City, NY", "Los Angeles, CA", "San Francisco, CA", "San Jose, CA", "Boston, MA",
+#             "Chicago, IL", "Houston, TX", "Phoenix, AZ", "Philadelphia, PA", "San Antonio, TX", "San Diego, CA",
+#             "Dallas, TX", "Indianapolis, IN", "Washington, DC", "Miami, FL", "Pittsburgh, PA"]
+
+location_dict = {
+    # longitude latitude
+    "New York City, NY": [-74.005974, 40.712776],
+    "Los Angeles, CA": [-118.243683, 34.052235],
+    "San Francisco, CA": [-122.419418, 37.774929],
+    "San Jose, CA": [-121.886330, 37.338207],
+    "Boston, MA": [-71.058884, 42.360081],
+    "Chicago, IL": [-87.63245, 41.88425],
+    "Houston, TX": [-95.36953, 29.76079],
+    "Phoenix, AZ": [-112.0758, 33.44826],
+    "Philadelphia, PA": [-75.16218, 39.95223],
+    "San Antonio, TX": [-98.49461, 29.42458],
+    "San Diego, CA": [-117.16171, 32.71568],
+    "Dallas, TX": [-96.79512, 32.77823],
+    "Indianapolis, IN": [-86.14996, 39.76691],
+    "Washington, DC": [-77.03196, 38.89037],
+    "Miami, FL": [-80.19773, 25.77481],
+    "Pittsburgh, PA": [-79.99734, 40.43851],
+    'Montgomery, AL': [-86.279118, 32.361538], 'Little Rock, AR': [-92.331122, 34.736009],
+    'Sacramento, CA': [-121.468926, 38.555605], 'Denver, CO': [-104.984167, 39.7391667],
+    'Hartford, CT': [-72.677, 41.767], 'Dover, DE': [-75.526755, 39.161921], 'Tallahassee, FL': [-84.27277, 30.4518],
+    'Atlanta, GA': [-84.39, 33.76], 'Boise, ID': [-116.237651, 43.613739], 'Springfield, IL': [-89.650373, 39.78325],
+    'Des Moines, IA': [-93.620866, 41.590939], 'Topeka, KS': [-95.69, 39.04], 'Frankfort, KY': [-84.86311, 38.197274],
+    'Baton Rouge, LA': [-91.140229, 30.45809], 'Augusta, GA': [-69.765261, 44.323535],
+    'Annapolis, MD': [-76.501157, 38.972945], 'Lansing, MI': [-84.5467, 42.7335], 'Saint Paul, MN': [-93.094, 44.95],
+    'Jefferson City, MO': [-92.189283, 38.572954], 'Lincoln, NE': [-96.675345, 40.809868],
+    'Carson City, NV': [-119.753877, 39.160949], 'Concord, NH': [-71.549127, 43.220093],
+    'Trenton, NJ': [-74.756138, 40.221741], 'Santa Fe, NM': [-105.964575, 35.667231],
+    'Albany, NY': [-73.781339, 42.659829], 'Raleigh, NC': [-78.638, 35.771], 'Bismarck, ND': [-100.779004, 48.813343],
+    'Columbus, OH': [-83.000647, 39.962245], 'Oklahoma City, OK': [-97.534994, 35.482309],
+    'Salem, OR': [-123.029159, 44.931109], 'Providence, RI': [-71.422132, 41.82355], 'Columbia, SC': [-81.035, 34.0],
+    'Pierre, SD': [-100.336378, 44.367966], 'Nashville, TN': [-86.784, 36.165], 'Austin, TX': [-97.75, 30.266667],
+    'Salt Lake City, UT': [-111.892622, 40.7547], 'Montpelier, VT': [-72.57194, 44.26639],
+    'Richmond, VA': [-77.46, 37.54], 'Seattle, WA': [-122.332069, 47.606209], 'Charleston, WV': [-81.633294, 38.349497],
+    'Madison, WI': [-89.384444, 43.074722], 'Cheyenne, WY': [-104.802042, 41.145548],
+}
+
+job_spider_headers = {
+    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
+    'Connection': 'keep-alive',
+    'Cookie': 'fingerprint=0e4899d6394771c550c2e0a04fdaa48a; SSALR_NonModal_Interaction=true; ASP.NET_SessionId=edzh4xjieypczu2dxqkuv3rt; viewercountry=US; check=true; AMCV_A86C525A548992260A4C98C6%40AdobeOrg=1256414278%7CMCMID%7C09721714665083437873758005962808455971%7CMCAID%7CNONE; s_cc=true; js_abs=13|True; jsr_hybd=1|377782396; 58_JSRadius=20; SortBy=rv.di.dt; js_xys=20|False; jsr_trvxsplt=16|774595554; Ssr_StatesExclude=1|824233132; Ssr_RestrictKwdParam=2|589489524; jsr_searchfallback=3|189360501; jsr_eptysrchsplt=2|743732991; jsr_multiphyloc=1|1; jsr_descsnippet=3|306743047; jsr_usebrandingclogo=3|959125322; jsr_FitIconScoreCard=0|791534291; jsr_fltrsqnc=1|313143866; jsr_fenced=1|993787890; jsr_mdlysplt=9|True; jsr_pure=1|52347030; jsr_radiusinheader=0|185220510; jsr_bmlitesplt=3|129967386; jsr_splt=11|True; jsr_vwsplt=7|6; jsr_qlfytgsplt=4|155233727; typeaheads_abs=3|2; jsr_sldsp=0|1; jsr_savedjobssplt=1|940384626; jsr_jvnonjobcontent=4|453894373; atmResolver=|Seeker|lpf|58|164|; jsr_mbfltr=1|1; m_dvfpid=0e4899d6394771c550c2e0a04fdaa48a; G_ENABLED_IDPS=google; jsr_medleysplt=1|1; AdCtxViewedJobs=%5B%22plid%3D470%26pcid%3D660%26poccid%3D11970%22%2C%22plid%3D470%26pcid%3D660%26poccid%3D11970%22%2C%22plid%3D362%26pcid%3D660%26poccid%3D11970%22%2C%22plid%3D702%26pcid%3D660%26poccid%3D11970%22%2C%22plid%3D383%26pcid%3D1%26poccid%3D11803%22%5D; AdCtxViewedJobsKeyword=Financial%20Analyst; s_sq=%5B%5BB%5D%5D; jsCrit=q%3dsoftware%2520engineer%26brd%3d1%2c2%26ispowersearch%3d1; rcnt.srch=Financial-Analyst%7c%7c%7c%7c%7c%7c6%2f17%2f2020+10%3a46%3a28+PM%7c%7c%7cFinancial%2bAnalyst%7c%7c%7c%2fsearch%2f%3fq%3dFinancial-Analyst%5e%5e%5eSoftware-Engineer%7c%7c%7c%7c%7c%7c6%2f17%2f2020+10%3a45%3a27+PM%7c%7c%7cSoftware%2bEngineer%7c%7c%7c%2fsearch%3fq%3dSoftware-Engineer%5e%5e%5eSoftware-Engineer%7c%7c%7c%7c%7c%7c6%2f18%2f2020+12%3a12%3a36+AM%7c%7c%7cSoftware-Engineer%7c%7c%7c%2fsearch%2f%3fq%3dSoftware-Engineer; prsv.rcnt.srch=Financial-Analyst%7c%7c%7c%7c%7c%7c6%2f17%2f2020+10%3a46%3a28+PM%7c%7c%7cFinancial%2bAnalyst%7c%7c%7c%2fsearch%2f%3fq%3dFinancial-Analyst%5e%5e%5eSoftware-Engineer%7c%7c%7c%7c%7c%7c6%2f17%2f2020+10%3a45%3a27+PM%7c%7c%7cSoftware%2bEngineer%7c%7c%7c%2fsearch%3fq%3dSoftware-Engineer%5e%5e%5eSoftware-Engineer%7c%7c%7c%7c%7c%7c6%2f18%2f2020+12%3a12%3a36+AM%7c%7c%7cSoftware-Engineer%7c%7c%7c%2fsearch%2f%3fq%3dSoftware-Engineer; apas_trgtng={%22mesco%22:[1500127001001%2C1500128001001]}; jsrm_ads=0|320711426',
+    'Host': 'www.monster.com',
+    'Referer': 'https://www.monster.com/jobs/search/?q=software-engineer&stpage=1&page=2',
+    'sec-ch-ua': '"\\Not\"A;Brand";v="99", "Chromium";v="84", "Microsoft Edge";v="84"',
+    'sec-ch-ua-mobile': '?0',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-origin',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.45 Safari/537.36 Edg/84.0.522.20',
+}

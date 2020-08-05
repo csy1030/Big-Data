@@ -1,0 +1,74 @@
+﻿job,location,salary_med,demand,lon,lat
+Web Developer,"New York City, NY",88942,4,-74.005974,40.712776
+Web Developer,"Los Angeles, CA",84639,4,-118.243683,34.052235
+Web Developer,"San Francisco, CA",95605,4,-122.419418,37.774929
+Web Developer,"San Jose, CA",96985,4,-121.88633,37.338207
+Web Developer,"Boston, MA",84899,4,-71.058884,42.360081
+Web Developer,"Chicago, IL",82863,3,-87.63245,41.88425
+Web Developer,"Houston, TX",79600,3,-95.36953,29.76079
+Web Developer,"Phoenix, AZ",82934,3,-112.0758,33.44826
+Web Developer,"Philadelphia, PA",80634,4,-75.16218,39.95223
+Web Developer,"San Antonio, TX",75099,3,-98.49461,29.42458
+Web Developer,"San Diego, CA",82368,4,-117.16171,32.71568
+Web Developer,"Dallas, TX",87329,3,-96.79512,32.77823
+Web Developer,"Indianapolis, IN",76456,3,-86.14996,39.76691
+Web Developer,"Washington, DC",85077,4,-77.03196,38.89037
+Web Developer,"Miami, FL",72433,3,-80.19773,25.77481
+Web Developer,"Pittsburgh, PA",72161,3,-79.99734,40.43851
+Web Developer,"New York City, NY",88942,4,-74.005974,40.712776
+Web Developer,"Los Angeles, CA",84639,4,-118.243683,34.052235
+Web Developer,"San Francisco, CA",95605,4,-122.419418,37.774929
+Web Developer,"San Jose, CA",96985,4,-121.88633,37.338207
+Web Developer,"Boston, MA",84899,4,-71.058884,42.360081
+Web Developer,"Chicago, IL",82863,3,-87.63245,41.88425
+Web Developer,"Houston, TX",79600,3,-95.36953,29.76079
+Web Developer,"Phoenix, AZ",82934,3,-112.0758,33.44826
+Web Developer,"Philadelphia, PA",80634,4,-75.16218,39.95223
+Web Developer,"San Antonio, TX",75099,3,-98.49461,29.42458
+Web Developer,"San Diego, CA",82368,4,-117.16171,32.71568
+Web Developer,"Dallas, TX",87329,3,-96.79512,32.77823
+Web Developer,"Indianapolis, IN",76456,3,-86.14996,39.76691
+Web Developer,"Washington, DC",85077,4,-77.03196,38.89037
+Web Developer,"Miami, FL",72433,3,-80.19773,25.77481
+Web Developer,"Pittsburgh, PA",72161,3,-79.99734,40.43851
+Web Developer,"Montgomery, AL",87122,4,-86.279118,32.361538
+Web Developer,"Little Rock, AR",71891,3,-92.331122,34.736009
+Web Developer,"Sacramento, CA",87528,3,-121.468926,38.555605
+Web Developer,"Denver, CO",80746,3,-104.984167,39.7391667
+Web Developer,"Hartford, CT",83397,3,-72.677,41.767
+Web Developer,"Dover, DE",81474,3,-75.526755,39.161921
+Web Developer,"Tallahassee, FL",69604,4,-84.27277,30.4518
+Web Developer,"Atlanta, GA",86411,4,-84.39,33.76
+Web Developer,"Boise, ID",77569,3,-116.237651,43.613739
+Web Developer,"Springfield, IL",82295,3,-89.650373,39.78325
+Web Developer,"Des Moines, IA",82406,3,-93.620866,41.590939
+Web Developer,"Topeka, KS",70699,3,-95.69,39.04
+Web Developer,"Frankfort, KY",73855,4,-84.86311,38.197274
+Web Developer,"Baton Rouge, LA",69448,3,-91.140229,30.45809
+Web Developer,"Augusta, GA",72599,3,-69.765261,44.323535
+Web Developer,"Annapolis, MD",82903,3,-76.501157,38.972945
+Web Developer,"Lansing, MI",78588,4,-84.5467,42.7335
+Web Developer,"Saint Paul, MN",83265,3,-93.094,44.95
+Web Developer,"Jefferson City, MO",87938,3,-92.189283,38.572954
+Web Developer,"Lincoln, NE",68513,3,-96.675345,40.809868
+Web Developer,"Carson City, NV",82819,3,-119.753877,39.160949
+Web Developer,"Concord, NH",76412,3,-71.549127,43.220093
+Web Developer,"Trenton, NJ",87417,4,-74.756138,40.221741
+Web Developer,"Santa Fe, NM",77732,3,-105.964575,35.667231
+Web Developer,"Albany, NY",89714,5,-73.781339,42.659829
+Web Developer,"Raleigh, NC",80966,4,-78.638,35.771
+Web Developer,"Bismarck, ND",92492,3,-100.779004,48.813343
+Web Developer,"Columbus, OH",81234,4,-83.000647,39.962245
+Web Developer,"Oklahoma City, OK",71058,3,-97.534994,35.482309
+Web Developer,"Salem, OR",82064,3,-123.029159,44.931109
+Web Developer,"Providence, RI",79070,3,-71.422132,41.82355
+Web Developer,"Columbia, SC",90680,3,-81.035,34.0
+Web Developer,"Pierre, SD",83366,4,-100.336378,44.367966
+Web Developer,"Nashville, TN",73124,3,-86.784,36.165
+Web Developer,"Austin, TX",85670,4,-97.75,30.266667
+Web Developer,"Salt Lake City, UT",72519,3,-111.892622,40.7547
+Web Developer,"Montpelier, VT",92610,3,-72.57194,44.26639
+Web Developer,"Seattle, WA",83964,4,-122.332069,47.606209
+Web Developer,"Charleston, WV",85358,3,-81.633294,38.349497
+Web Developer,"Madison, WI",67064,4,-89.384444,43.074722
+Web Developer,"Cheyenne, WY",92793,3,-104.802042,41.145548

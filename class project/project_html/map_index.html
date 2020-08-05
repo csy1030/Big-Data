@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map_index</title>
+    <script src="jquery-3.1.1.js"></script>
+    <style>
+        body{
+            width: 1300px;
+            margin: 20px;
+            background-color: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: gray
+        }
+        span{
+            font-size: large;
+            font-weight: 500;
+        }
+        #mapbox{
+            float: right;
+            margin-top: 80px;
+            margin-right: 30px;
+        }
+        #header{
+            width: 300px;
+            float:left;
+        }
+        #title{
+            float: right;
+            border: 200px;
+            margin-right: 200px;
+            margin-top: 90px;
+        }
+        li{
+            list-style: none;
+        }
+        #job_title{
+            width: 400px;
+            float: left;
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        li{
+           padding: 5px; 
+           display: block;
+           cursor: pointer;
+           border-radius: 5px;
+           
+        }
+        li:hover{
+            background-color:#3D76F0;
+            color: white;
+            box-shadow: #3A6EDE ;
+            
+        }
+        #bar_chart:hover{
+            color: white;
+        }
+        
+    </style>
+    <script>
+
+        $(document).ready(function(){
+            $("li").click(function () {
+            $('li').css('border-style','none')
+            var id = './light_maps/' + $(this).attr('id') + '.html';
+            var id_show = $(this).attr('id');
+            $('iframe').attr('src',id)
+            $(this).css('border-style','solid')
+            $(this).css('border-color','#3D76F0')
+
+          })
+        });
+        
+    </script>
+</head>
+<body>
+    <div id = 'mapbox'>
+        <iframe src="./light_maps/SoftwareDeveloperEngineer.html" frameborder="0" width="850" height="550"></iframe>
+    </div>
+
+    <div id = 'header'>
+        <span>Maps</span>
+        <span>/</span>
+        <a id = 'bar_chart' href='./bar_chart.html'>Bar Chart</a>
+        
+        <h2>Salary in US</h2>
+    </div>
+    
+    
+    <div id = 'job_title'>
+        <li id = 'SoftwareDeveloperEngineer'>Software Developer / Engineer</li>
+        <li id = 'ITmanager'>IT manager</li>
+        <li id = 'WebDeveloper'>Web Developer</li>
+        <li id = 'DatabaseAdministrator'>Database Administrator</li>
+        <li id = 'CyberSecurityAnalyst'>Cyber Security Analyst</li>
+        <li id = 'SystemsAnalyst'>Systems Analyst</li>
+        <li id = 'NetworkEngineerArchitect'>Network Engineer / Architect</li>
+        <li id = 'IntegratedCircuit(IC)DesignEngineer'>Integrated Circuit (IC) Design Engineer</li>
+        <li id = 'HardwareDesignEngineer'>Hardware Design Engineer</li>
+        <li id = 'EmbeddedSoftwareEngineer'>Embedded Software Engineer</li>
+        <li id = 'ElectricalDesignEngineer'>Electrical Design Engineer</li>
+        <li id = 'TelecommunicationsNetworkTechnician'>Telecommunications Network Technician</li>
+        <li id = 'DataScientist'>Data Scientist</li>
+    </div>
+    
+</body>
+</html>

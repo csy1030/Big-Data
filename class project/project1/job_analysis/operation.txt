@@ -1,0 +1,1 @@
+['data-scientist', 'Development Data Scientist', 'Paycom', 'Oklahoma City, Oklahoma 73103', ['BS degree in Computer Science or related field with 5 years machine learning engineering experience or MS/PhD degree in Computer Science or related field with 3+ years of machine learning engineering experience.']]

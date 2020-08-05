@@ -1,0 +1,188 @@
+// 20200705210207
+// https://www.monster.com/SalaryProfileHandler.ashx?Occupation=Software%20Developer%20/%20Engineer&location=Los%20Angeles,%20CA
+
+[
+  {
+    "name": "Software Developer / Engineer",
+    "description": "Designs or improves computer software.  Oversees the entire software development process.  Analyzes customer or user needs, designs programs, writes code or instructs computer programmers, tests design, and documents programs. May assist with upgrades or maintenance. May specialize in the design of computer applications or computer systems.",
+    "similarOccupation": [
+      "Senior Software Developer / Engineer",
+      "Application Developer / Engineer",
+      "Java Developer / Engineer",
+      "C / C++ Developer / Engineer",
+      "Senior Java Developer / Engineer",
+      "JavaScript Developer / Engineer",
+      "C# Developer / Engineer",
+      "Senior Web Developer",
+      "Python Developer",
+      "Android Developer / Engineer"
+    ],
+    "salaryType": "annual",
+    "nationwide": {
+      "salary": {
+        "Percentile_10": 48902.3,
+        "Percentile_20": 61271.6,
+        "Percentile_25": 66897.75,
+        "Percentile_30": 72315.9,
+        "Percentile_40": 82920.21,
+        "Percentile_50": 93367.5,
+        "Percentile_60": 103798.8,
+        "Percentile_70": 114275.1,
+        "Percentile_75": 119599.25,
+        "Percentile_80": 125114.4,
+        "Percentile_90": 138567.4
+      },
+      "demand": "Very High",
+      "salaryBoostSkills": [
+
+      ],
+      "distinguishingSkills": [
+        {
+          "Name": "HTML5",
+          "Description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web."
+        },
+        {
+          "Name": "Continuous Integration (CI)",
+          "Description": "Working experience of Continuous Integration (CI), which is the practice in software engineering of merging all developer working copies to a shared mainline several times a day."
+        },
+        {
+          "Name": "jQuery",
+          "Description": "jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT license."
+        },
+        {
+          "Name": "Software Architecture",
+          "Description": "Software architecture refers to the high level structures of a software system, the discipline of creating such structures, and the documentation of these structures."
+        },
+        {
+          "Name": "JavaScript Object Notation (JSON)",
+          "Description": "In computing, JavaScript Object Notation or JSON ( JAY-sn), is an open-standard file format that uses human-readable text to transmit data objects consisting of attributevalue pairs and array data types (or any other serializable value)."
+        }
+      ]
+    },
+    "bylocation": {
+      "salary": {
+        "Percentile_10": 63166.6,
+        "Percentile_20": 76347.21,
+        "Percentile_25": 81244.5,
+        "Percentile_30": 85751.0,
+        "Percentile_40": 92777.2,
+        "Percentile_50": 99070.0,
+        "Percentile_60": 104792.8,
+        "Percentile_70": 110780.2,
+        "Percentile_75": 114010.5,
+        "Percentile_80": 117593.0,
+        "Percentile_90": 128020.4
+      },
+      "demand": "Very High",
+      "salaryBoostSkills": [
+
+      ],
+      "distinguishingSkills": [
+        {
+          "Name": "React Javascript",
+          "Description": "Working experience of React Javascript. In computing, React (sometimes styled React.js or ReactJS) is a JavaScript library for building user interfaces. React allows developers to create large web-applications that use data and can change over time without reloading the page."
+        },
+        {
+          "Name": ".NET",
+          "Description": ".NET Framework (pronounced dot net) is a software framework developed by Microsoft that runs primarily on Microsoft Windows."
+        },
+        {
+          "Name": "HTML5",
+          "Description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web."
+        },
+        {
+          "Name": "Hypertext Preprocessor (PHP)",
+          "Description": "PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language."
+        },
+        {
+          "Name": "JavaScript Object Notation (JSON)",
+          "Description": "In computing, JavaScript Object Notation or JSON ( JAY-sn), is an open-standard file format that uses human-readable text to transmit data objects consisting of attributevalue pairs and array data types (or any other serializable value)."
+        }
+      ]
+    },
+    "advancementOccupations": [
+      {
+        "name": "User Interface (UI) Developer",
+        "category": "LateralAdvancement"
+      },
+      {
+        "name": "Senior Software Developer / Engineer",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "C / C++ Developer / Engineer",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Senior Java Developer / Engineer",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Android Developer / Engineer",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Software Architect",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Performance Engineer",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Back End Developer / Engineer",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Java Architect",
+        "category": "AdvancementJob"
+      },
+      {
+        "name": "Software Development / Engineering Manager",
+        "category": "AdvancementJob"
+      }
+    ],
+    "lateralOccupations": [
+      {
+        "name": "Network Engineer / Architect",
+        "category": "LateralTransition"
+      },
+      {
+        "name": "iOS Developer / Engineer",
+        "category": "SimilarJob"
+      },
+      {
+        "name": "Ruby On Rails Developer",
+        "category": "SimilarJob"
+      },
+      {
+        "name": "Oracle Developer",
+        "category": "LateralTransition"
+      },
+      {
+        "name": "Network Reliability Engineer",
+        "category": "LateralTransition"
+      },
+      {
+        "name": "Python Developer",
+        "category": "SimilarJob"
+      },
+      {
+        "name": "Perl Developer",
+        "category": "SimilarJob"
+      },
+      {
+        "name": "Build and Release Engineer",
+        "category": "SimilarJob"
+      },
+      {
+        "name": "JavaScript Developer / Engineer",
+        "category": "SimilarJob"
+      },
+      {
+        "name": "Senior .NET Developer / Engineer",
+        "category": "SimilarJob"
+      }
+    ]
+  }
+]
