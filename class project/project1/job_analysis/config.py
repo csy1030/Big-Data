@@ -2,9 +2,8 @@ job_list_query = ["software developer", "IT manager", "web developer", "database
                   "information security analyst", "computer systems analyst", "computer network architect",
                   "computer support specialist", "Circuit Design Engineer", "FPGA Engineer",
                   "Embedded Systems Engineer", "Electrical Design Engineer", "Telecommunications Engineer",
-                  "Machine Learning Engineer", "Data_scientist"]
-
-job_list_supplement = ["Java Software Engineer", "Python Software Engineer", "Golang Software Engineer",
+                  "Machine Learning Engineer", "Data_scientist",
+                  "Java Software Engineer", "Python Software Engineer", "Golang Software Engineer",
                        "PHP developer", "Node js developer", "Ruby developer", "Front End Web Developer",
                        "SQL Developer", "flash Developer", "JavaScript Developer", "Android Developer", "IOS Developer",
                        "Database Engineer", "Spark Engineer", "Data Analyst", "electrical test",

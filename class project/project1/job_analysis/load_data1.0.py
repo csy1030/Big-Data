@@ -9,6 +9,10 @@ driver = '{ODBC Driver 17 for SQL Server}'
 
 
 class LoadData:
+    """:arg
+    store salary data into csv with [job,median salary,lon,lat,demand]
+    """
+
     def __init__(self):
         self.db = pyodbc.connect(
             'DRIVER=' + driver + ';PORT=1433;SERVER=' + server + ';PORT=1443;DATABASE=' + db + ';UID=' + user + ';PWD=' + password)
@@ -32,7 +36,7 @@ class LoadData:
         for item in result:
             self.job_details.append(item)
 
-    def get_salary(self, job):
+    def get_same_job_diff_loc(self, job):
         """ get salary in same job different location
         """
         self.job_details = []
@@ -46,7 +50,7 @@ class LoadData:
         self.cur.execute(query, loc)
         self.job_details = self.cur.fetchall()
 
-    def write_csv(self, job):
+    def write_same_job_diff_loc(self, job):
         job = ''.join(job.split(" ")).replace('/', '')
         with open("salary_csv/job/{}_salary.csv".format(job), 'w', newline='', encoding='utf-8-sig',
                   errors='ignore') as f:
@@ -59,8 +63,6 @@ class LoadData:
                         self.loc_dict[item[1]][1])
                 content_to_write.append(item)
             w.writerows(content_to_write)
-
-
 
     def write_same_loc_diff_job(self, loc):
         loc = "_".join(loc.split(",")[0].split(" "))
@@ -76,12 +78,7 @@ class LoadData:
             w.writerows(content_to_write)
 
     def main(self):
-        job_list = ["Software Developer / Engineer", "IT manager", "Web Developer", "Database Administrator",
-                    "Cyber Security Analyst", "Systems Analyst", "Network Engineer / Architect",
-                    "Integrated Circuit (IC) Design Engineer",
-                    "Hardware Design Engineer",
-                    "Embedded Software Engineer", "Electrical Design Engineer", "Telecommunications Network Technician",
-                    "Data Scientist"]
+        job_list = config.job_list_salary
         loc_list = []
         loc_dict = config.location_dict
         for key in loc_dict:
@@ -89,10 +86,9 @@ class LoadData:
         while loc_list:
             loc = loc_list.pop(0)
             self.get_same_loc_diff_job(loc)
-            # self.get_salary(job)
-            # self.load_data()
             self.write_same_loc_diff_job(loc)
-            # self.write_csv(job)
+            # self.get_same_job_diff_loc(job)
+            # self.write_same_job_diff_loc(job)
 
 
 if __name__ == '__main__':

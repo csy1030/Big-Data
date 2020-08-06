@@ -13,6 +13,10 @@ driver = '{ODBC Driver 17 for SQL Server}'
 
 
 class JobSpider:
+    """
+    scrape the data from www.monster.com using request, xpath
+    """
+
     def __init__(self):
         self.detail_list = []
         self.count = 0
@@ -24,8 +28,10 @@ class JobSpider:
             'DRIVER=' + driver + ';PORT=1433;SERVER=' + server + ';PORT=1443;DATABASE=' + db + ';UID=' + user + ';PWD=' + password)
         self.cur = self.db.cursor()
 
-    # url enqueue
     def get_link(self, job, page):
+        """
+        Get secondary links (25 records on one page)
+        """
         json_parse = requests.get(
             url=self.url.format(job, page),
             headers=self.headers
@@ -40,6 +46,9 @@ class JobSpider:
                 self.url_queue.put(item["TitleLink"])
 
     def get_detail(self, job):
+        """
+        Parse the HTML to get title, company, location, job_description
+        """
         while True:
             if self.url_queue.empty():
                 break
@@ -97,6 +106,16 @@ class JobSpider:
             self.count += 1
             print('parsing {}...'.format(self.count))
 
+    def insert_sql(self):
+        """:arg
+        Insert into Azure MySQL
+        """
+        sql = 'insert into job_info (job_query,title,company,location,description) values (?,?,?,?,?);'
+        print('Writing in MySQL...')
+        self.cur.executemany(sql, self.job_details)
+        self.db.commit()
+        print('Written in MySQL succesfully!')
+
     def write_csv(self, job, pages):
         with open("{}_{}pages.csv".format(job, pages), "w", newline='', encoding='utf-8-sig', errors='ignore') as f:
             print('writing in MySQL...')
@@ -104,24 +123,14 @@ class JobSpider:
             w.writerow(('query', 'title', 'company', 'location', 'description'))
             w.writerows(self.job_details)
 
-    def insert_sql(self):
-        sql = 'insert into job_info_test (job_query,title,company,location,description) values (?,?,?,?,?);'
-        print('Writing in MySQL...')
-        self.cur.executemany(sql, self.job_details)
-        self.db.commit()
-
-        print('Written in MySQL succesfully!')
+    def create_table(self):
+        sql = 'create table if not exists job_info(id int identity(1,1) primary key, job_query varchar(30),title varchar(200),company varchar(200),location varchar(80),description text);'
+        self.cur.execute(sql)
+        self.cur.commit()
 
     def main(self):
         time_start = time.time()
-        # job = input('Input job:')
-        # job = "-".join(job.split(' '))
-        # pages = int(input('Input pages:'))
-
-        # job_list = config.job_list_supplement
-        job_list = ["doctor","dentist"]
-
-
+        job_list = config.job_list_query
         pages = 20
         for job in job_list:
             for i in range(1, pages + 1):
@@ -140,12 +149,6 @@ class JobSpider:
             print("{} s,{} records".format(round((time_end - time_start), 2), self.count))
         self.cur.close()
         self.db.close()
-
-    def create_table(self):
-        sql = 'create table job_info_test(id int identity(1,1) primary key, job_query varchar(30),title varchar(200),company varchar(200),location varchar(80),description text);'
-
-        self.cur.execute(sql)
-        self.cur.commit()
 
 
 if __name__ == '__main__':
